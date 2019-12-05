@@ -1,0 +1,9 @@
+$ docker build -t test_container .
+
+$ docker run test_container
+
+$ docker run --entrypoint invoke test_container --list
+
+$ docker run --entrypoint invoke test_container pipeline-part-one
+
+$ docker run --entrypoint invoke test_container pipeline-part-two
